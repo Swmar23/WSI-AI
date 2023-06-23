@@ -1,0 +1,18 @@
+Program grający w rozszerzoną wersję gry Kółko i Krzyżyk.
+
+Autor: Marek Świergoń (261750)
+
+Program napisany w języku C++, wykorzystuje Minimax z alfa-beta cięciami.
+Heurystyka oceny planszy, poza oczywistymi sytuacjami jak porażka, wygrana i remis (wszystkie pola zajęte bez porażki),
+bierze pod uwagę liczbę możliwych do zrobienia przez każdego z graczy linii długości cztery, linii długości trzy oraz zrobionych przez graczy linii typu [XX-X] (są mile widziane).
+
+Kompilacja:
+g++ -O3 -o solver solver.cpp
+Wywołanie (tak jak w specyfikacji):
+./solver adres port nr_gracza głębokość
+
+Biblioteki wykorzystane w programie są standardowo obsługiwane przez g++ i znajdują się 
+w dyrektywach include na górze pliku solver.cpp
+
+Kompilację i działanie programu przetestowano na systemie Ubuntu 20.04.6 LTS, 
+z użyciem g++ w wersji 9.4.0.
